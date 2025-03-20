@@ -4,6 +4,11 @@
     gap: 100px;
     height: 100%;
 
+    @media  screen and (max-width: 1024px) {
+        flex-direction: column;
+        gap: 0px;
+    }
+
     .left{
         flex: 1;
         display: flex;
@@ -19,11 +24,19 @@
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
+
+            @media  screen and (max-width: 1280px) {
+                font-size: 64px;
+            }
         }
         
         h3{
             font-weight: 400;
             max-width: 70%;
+
+            @media  screen and (max-width: 1024px) {
+                max-width: 100%;
+            }
         }
         a{
             padding: 15px 25px;
@@ -81,6 +94,32 @@
                 object-fit: contain;
                 animation: 3s ease-in-out infinite botAnimate;
             }
+            .chat{
+                position: absolute;
+                bottom: -30px;
+                right: -50px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 20px;
+                background-color: #2c2937;
+                border-radius: 10px;
+
+                @media  screen and (max-width: 1024px) {
+                    display: none;
+                }
+
+                @media  screen and (max-width: 1280px) {
+                    right: 0;
+                }
+
+                img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
         }
     }
     .orbital{
@@ -89,6 +128,30 @@
         left: 0;
         opacity: 0.05;
         animation: 100% linear infinite rotateOrbital;
+    }
+    .terms{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%; 
+            border: 2px solid rgb(188, 176, 176);
+        }
+
+        .links{
+            display: flex;
+            gap: 10px;
+            color: #888;
+            font-size: 15px;
+        }
     }
 }
 
