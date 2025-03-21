@@ -11,8 +11,7 @@ const Homepage = () => {
       <div className='left'>
         <h1>ZC AI</h1>
         <h2>Supercharge your creativity and productivity</h2>
-        <h3>Lorem ipsum dolor sit amet consectetur 
-          adipisicing elit. </h3>
+        <h3>Your intelligent AI assistant for ideas, work, and everything in between..Think faster, create smarter, and get more done with AI. </h3>
           <Link to='/dashboard'>Get Started</Link>
       </div>
       <div className='right'>
